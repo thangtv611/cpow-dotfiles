@@ -1,5 +1,5 @@
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "solargraph", "tsserver" }
+  ensure_installed = { "lua_ls", "tsserver" }
 })
 
 local lspconfig = require('lspconfig')
@@ -28,7 +28,7 @@ require("lspconfig").lua_ls.setup {
   }
 }
 
-require("lspconfig").solargraph.setup({})
+-- require("lspconfig").solargraph.setup({})
 require("lspconfig").tsserver.setup({})
 
 vim.api.nvim_create_autocmd('LspAttach', {
