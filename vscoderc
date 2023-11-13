@@ -3,4 +3,6 @@ nnoremap k kzz
 nnoremap J 5jzz
 nnoremap K 5kzz
 
+
 set cursorline
+set relativenumber 
