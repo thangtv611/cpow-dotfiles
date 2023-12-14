@@ -19,14 +19,10 @@ return require('packer').startup(function(use)
 
     use 'wbthomason/packer.nvim'
     use 'tpope/vim-commentary'
-    -- theme
     use 'dracula/vim'
-    -- use 'navarasu/onedark.nvim'
     use 'olimorris/onedarkpro.nvim'
-    use 'ellisonleao/gruvbox.nvim'
     use 'nvim-tree/nvim-web-devicons'
     use 'nvim-tree/nvim-tree.lua'
-    -- use { "catppuccin/nvim", as = "catppuccin" }
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-treesitter/nvim-treesitter'
     use 'bluz71/vim-nightfly-colors'
@@ -34,7 +30,6 @@ return require('packer').startup(function(use)
     use 'lewis6991/gitsigns.nvim'
     use 'romgrk/barbar.nvim'
     use 'preservim/vimux'
-    use 'christoomey/vim-tmux-navigator'
     use 'tpope/vim-fugitive'
     use 'tpope/vim-surround'
     use 'stevearc/oil.nvim'
@@ -59,7 +54,6 @@ return require('packer').startup(function(use)
 
     use({
         'nvim-telescope/telescope.nvim',
-        --	  tag = '0.1.0',
         branch = 'master',
         requires = { {'nvim-lua/plenary.nvim'} }
     })
