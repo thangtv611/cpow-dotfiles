@@ -7,5 +7,7 @@
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 
 -- faster Up/Down with J/K
-vim.keymap.set('n', '<c-j>','5j<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '<c-k>','5k<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<S-j>','5j')
+vim.keymap.set('n', '<S-k>','5k')
+
+

@@ -21,7 +21,8 @@ return require('packer').startup(function(use)
     use 'tpope/vim-commentary'
     -- theme
     use 'dracula/vim'
-    use 'navarasu/onedark.nvim'
+    -- use 'navarasu/onedark.nvim'
+    use 'olimorris/onedarkpro.nvim'
     use 'ellisonleao/gruvbox.nvim'
     use 'nvim-tree/nvim-web-devicons'
     use 'nvim-tree/nvim-tree.lua'
@@ -62,6 +63,10 @@ return require('packer').startup(function(use)
         branch = 'master',
         requires = { {'nvim-lua/plenary.nvim'} }
     })
+
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end}
 
     if packer_bootstrap then
         require('packer').sync()
